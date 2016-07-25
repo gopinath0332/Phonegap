@@ -4,7 +4,7 @@
     "description": "> A Hello World template built with PhoneGap",
     "repository": {
         "type": "git",
-        "url": "https://github.com/phonegap/phonegap-app-hello-world.git"
+        "url": "https://github.com/gopinath0332/Phonegap.git"
     },
     "author": "PhoneGap Team",
     "license": "Apache-2.0.0",
@@ -19,7 +19,7 @@
         "server": "phonegap serve --port 9090"
     },
     "bugs": {
-        "url": "https://github.com/phonegap/phonegap-app-hello-world/issues"
+        "url": "https://github.com/gopinath0332/Phonegap/issues"
     },
-    "homepage": "https://github.com/phonegap/phonegap-app-hello-world"
+    "homepage": "https://github.com/gopinath0332/Phonegap"
 }
