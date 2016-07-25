@@ -15,8 +15,8 @@
         "phonegap:template"
     ],
     "scripts": {
-        "install": "phonegap build android",
-        "start": "phonegap serve --port 9090"
+        "android": "phonegap build android",
+        "server": "phonegap serve --port 9090"
     },
     "bugs": {
         "url": "https://github.com/phonegap/phonegap-app-hello-world/issues"
