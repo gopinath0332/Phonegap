@@ -4,3 +4,9 @@
 #support
 */platforms
 */plugins
+
+#error log
+*/npm-debug.log
+
+#budnle file
+*/**/js/app.js
