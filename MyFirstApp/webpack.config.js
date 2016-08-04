@@ -33,7 +33,10 @@ module.exports = {
         path: PATHS.build + "/js",
         filename: "app.js"
     },
-    plugins: debug ? [] : [
+    plugins: debug ? [new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
+    })] : [
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.optimize.UglifyJsPlugin({
