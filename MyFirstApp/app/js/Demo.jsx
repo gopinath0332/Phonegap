@@ -20,7 +20,7 @@ var Counter = React.createClass({
 	},
 	render: function(){
 		return(<div>
-			<button className="btn btn-success" onClick={this._startCounter} >Press Me11!</button>
+			<button className="btn btn-success" onClick={this._startCounter} >Press Me!</button>
 			<div>Total Time: {this.state.totalTime/1000} seconds</div>
 			<div>Remaing Time: {this.state.timeLeft ==1 ? 0: (this.state.timeLeft/1000) } seconds</div>
 		</div>);
