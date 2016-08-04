@@ -13,10 +13,9 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.css$/,
-            loaders: ['style', 'css?url=false'],
-            include: PATHS.app,
-			}, {
-            test: /\.jsx?$/,
+            loader: "style!css"
+        }, {
+            test: /\.(js|jsx)?$/,
             include: PATHS.app,
             exclude: /(node_modules|bower_components)/,
             loader: 'babel-loader',
@@ -24,6 +23,9 @@ module.exports = {
                 presets: ['react', 'es2015', 'stage-0'],
                 plugins: ['react-html-attrs', 'transform-class-properties', 'transform-decorators-legacy'],
             }
+        }, {
+            test: /\.(woff|woff2|eot|ttf|svg)$/,
+            loader: 'url'
         }]
     },
     output: {

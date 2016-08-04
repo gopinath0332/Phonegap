@@ -2,6 +2,7 @@ const $ = require("jquery");
 // const React = require("react");
 // const ReactDOM = require("react-dom");
 // const [targetNode] = $("#content");
+import 'bootstrap/dist/css/bootstrap.css';
 var targetNode = $("#content")[0];
 
 var Counter = React.createClass({
@@ -19,7 +20,7 @@ var Counter = React.createClass({
 	},
 	render: function(){
 		return(<div>
-			<button onClick={this._startCounter} >Press Me!</button>
+			<button className="btn btn-success" onClick={this._startCounter} >Press Me11!</button>
 			<div>Total Time: {this.state.totalTime/1000} seconds</div>
 			<div>Remaing Time: {this.state.timeLeft ==1 ? 0: (this.state.timeLeft/1000) } seconds</div>
 		</div>);
