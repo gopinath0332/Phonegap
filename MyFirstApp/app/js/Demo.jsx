@@ -1,11 +1,12 @@
+import 'bootstrap/dist/css/bootstrap.css';
+import "../css/app.css"
+
+
+
 const $ = require("jquery");
 // const React = require("react");
 // const ReactDOM = require("react-dom");
 // const [targetNode] = $("#content");
-
-
-import 'bootstrap/dist/css/bootstrap.css';
-import "../css/app.css"
 var targetNode = $("#content")[0];
 
 
@@ -27,7 +28,7 @@ var Counter = React.createClass({
 	},
 	render: function(){
 		return(<div>
-			<button className="btn btn-success" onClick={this._startCounter} >Press Me!</button>
+			<span className="glyphicon glyphicon-play btn-circle" onClick={this._startCounter}></span>
 			<div>Total Time: {this.state.totalTime/1000} seconds</div>
 			<div>Remaing Time: {this.state.timeLeft ==1 ? 0: (this.state.timeLeft/1000) } seconds</div>
 		</div>);
@@ -37,3 +38,6 @@ var Counter = React.createClass({
 
 ReactDOM.render(
    <Counter></Counter>, targetNode);
+
+
+// ReactDOM.render(<span className="glyphicon glyphicon-play btn-circle"></span>,targetNode);

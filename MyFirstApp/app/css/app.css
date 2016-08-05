@@ -1,49 +1,60 @@
-textarea:focus,
-input[type='text']:focus,
-input[type='password']:focus,
+body
+{
+    background-image: none;
+}
+
+.uneditable-input:focus,
+button:focus,
+input[type='color']:focus,
+input[type='date']:focus,
 input[type='datetime']:focus,
 input[type='datetime-local']:focus,
-input[type='date']:focus,
-input[type='month']:focus,
-input[type='time']:focus,
-input[type='week']:focus,
-input[type='number']:focus,
 input[type='email']:focus,
-input[type='url']:focus,
+input[type='month']:focus,
+input[type='number']:focus,
+input[type='password']:focus,
 input[type='search']:focus,
 input[type='tel']:focus,
-input[type='color']:focus,
-button:focus,
-.uneditable-input:focus
+input[type='text']:focus,
+input[type='time']:focus,
+input[type='url']:focus,
+input[type='week']:focus,
+textarea:focus
 {
     outline: 0 none !important;
 }
 
-
-.btn:focus,
-.btn:active:focus,
+.btn.active.focus,
 .btn.active:focus,
 .btn.focus,
 .btn:active.focus,
-.btn.active.focus
+.btn:active:focus,
+.btn:focus
 {
-    /*border: 0 !important;*/
     outline: none;
     outline-offset: 0;
-    /*background-color: none !important;*/
 }
-
 
 .btn-circle
 {
-    font-size: 12px;
-    line-height: 1.42;
+    font-size: 22px;
+    font-weight: bold;
 
-    width: 30px;
-    height: 30px;
-    padding: 6px 0;
+    display: inline-block;
 
-    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    padding: 11px 0 0 15px;
 
-    border-radius: 15px;
+    color: white;
+    border: 1px solid #c6c6c6;
+    border-radius: 25px;
+    background-color: #c6c6c6;
+    box-shadow: 0 2px grey;
+}
+
+.btn-circle:active
+{
+    border: 2px solid #888585;
 }
