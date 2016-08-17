@@ -12,7 +12,7 @@ const PATHS = {
 process.env.BABEL_ENV = ENV;
 
 const common = {
-    entry: PATHS.app + "/app.js",
+    entry: PATHS.app + "/app.jsx",
     output: {
         path: PATHS.build,
         filename: 'bundle.js',
@@ -20,12 +20,14 @@ const common = {
     module: {
         loaders: [{
             test: /\.css$/,
-            loaders: ['style', 'css?url=false'],
-            include: PATHS.app,
+            loader: "style!css"
         }, {
             test: /\.jsx?$/,
             loader: 'babel?cacheDirectory',
             include: PATHS.app,
+        }, {
+            test: /\.(woff|woff2|eot|ttf|svg)$/,
+            loader: 'url'
         }]
     }
 };
@@ -52,6 +54,10 @@ if (ENV === 'development') {
         },
         plugins: [
             new webpack.HotModuleReplacementPlugin(),
+            // new webpack.ProvidePlugin({
+            //     $: "jquery",
+            //     jQuery: "jquery"
+            // })
         ],
     });
 } else {

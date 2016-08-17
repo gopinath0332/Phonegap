@@ -9,6 +9,7 @@
         "babel-loader": "^6.2.1",
         "babel-preset-es2015": "^6.3.13",
         "babel-preset-react": "^6.3.13",
+        "bootstrap": "^3.3.7",
         "classnames": "^2.2.3",
         "cors": "^2.7.1",
         "ejs": "^2.4.1",
@@ -28,12 +29,13 @@
         "css-loader": "^0.23.1",
         "replace": "^0.3.0",
         "style-loader": "^0.13.0",
+        "url-loader": "^0.5.7",
         "webpack-merge": "^0.7.3"
     },
     "scripts": {
         "android": "phonegap build android",
         "build": "webpack",
-        "phoneserver": "webpack -w | phonegap serve --port 9090"
+        "phoneserver": "webpack --progress --watch | phonegap serve --port 9090 --auto-reload"
     },
     "author": "Jed Watson",
     "license": "MIT"
