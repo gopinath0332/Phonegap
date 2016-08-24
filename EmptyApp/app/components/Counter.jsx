@@ -1,3 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+
 var Counter = React.createClass({
 	getInitialState: function(){
 		return{"totalTime":60000,"elapsed":0,"interval":1000,"timeLeft":1};
